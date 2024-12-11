@@ -28,7 +28,7 @@ import {
 let length = 100;
 
 const App = (): React.JSX.Element => {
-    
+  
   return (
     <SafeAreaView>
       <ScrollView>
