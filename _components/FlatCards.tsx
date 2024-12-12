@@ -10,7 +10,8 @@ const FlatCards = (): React.JSX.Element => {
     return (
         <View>
             <Text style={[styles.headingText, textColor]}>FlatCards</Text>
-            <ScrollView style={styles.container} horizontal={true}>
+            <View style={styles.container}>  
+                {/* horizontal={true}> */}
                 {
                     colorsList.map((color, idx) =>
                         <View style={[styles.card, { backgroundColor: color }]} key={idx}>
@@ -42,7 +43,7 @@ const FlatCards = (): React.JSX.Element => {
                 <View style={[styles.card, { backgroundColor: 'brown' }]}>
                     <Text style={textColor}>8</Text>
                 </View> */}
-            </ScrollView>
+            </View>
         </View>
     )
 }

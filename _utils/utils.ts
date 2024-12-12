@@ -24,11 +24,11 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
+        justifyContent: 'space-between',
         padding: 8,
         flexWrap: 'wrap',
     },
     card: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         width: 100,
@@ -41,14 +41,14 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         paddingHorizontal: 10,
     },
+    text: {
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
     whiteText: {
-		color: '#FFFFFF',
-	},
-	darkText: {
-		color: '#000000',
-	},
-	text: {
-		fontSize: 24,
-		fontWeight: 'bold',
-	}
-})
+        color: '#FFFFFF',
+    },
+    darkText: {
+        color: '#000000',
+    },
+});
