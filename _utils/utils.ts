@@ -36,6 +36,17 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         margin: 8,
     },
+    elevatedCard: {
+        // "card" properties + shadow properties
+        shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 4,
+        elevation: 8,
+    },
     headingText: {
         fontSize: 24,
         fontWeight: 'bold',

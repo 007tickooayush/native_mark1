@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import FlatCards from './_components/FlatCards';
 import { decideTextColor, styles } from './_utils/utils';
+import ElevatedCards from './_components/ElevatedCards';
 
 let length = 100;
 
@@ -36,6 +37,7 @@ const App = (): React.JSX.Element => {
     <SafeAreaView >
       <ScrollView>
         <FlatCards />
+        <ElevatedCards />
       </ScrollView>
     </SafeAreaView>
   );
