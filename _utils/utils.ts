@@ -51,8 +51,7 @@ export const styles = StyleSheet.create({
         borderRadius: cardImgRadius,
         margin: 12,
         height: windowHeight * 0.40,
-        
-        // backgroundColor: '#FFFFFF',
+        backgroundColor: '#FFF8E8',
         
         // shadowColor: '#000000',
         // shadowOffset: {
@@ -120,6 +119,10 @@ export const styles = StyleSheet.create({
     text: {
         fontSize: 16,
         fontWeight: 'bold',
+    },
+    // Text colors
+    cardImgText: {
+        color: "#111344"
     },
     whiteText: {
         color: '#FFFFFF',
