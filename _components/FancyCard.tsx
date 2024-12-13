@@ -8,7 +8,7 @@ const FancyCard = () => {
     return (
         <View>
             <Text style={[styles.headingText, textColor]}>FancyCard</Text>
-            <View style={[styles.cardImgContainer]}>
+            <View style={[styles.cardImgContainer, styles.elevatedCard]}>
                 <Image
                     source={{
                         uri: 'https://picsum.photos/id/17/2500/1667',
