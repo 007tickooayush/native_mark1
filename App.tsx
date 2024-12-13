@@ -26,6 +26,7 @@ import {
 import FlatCards from './_components/FlatCards';
 import { decideTextColor, styles } from './_utils/utils';
 import ElevatedCards from './_components/ElevatedCards';
+import FancyCard from './_components/FancyCard';
 
 let length = 100;
 
@@ -38,6 +39,7 @@ const App = (): React.JSX.Element => {
       <ScrollView>
         <FlatCards />
         <ElevatedCards />
+        <FancyCard />
       </ScrollView>
     </SafeAreaView>
   );
