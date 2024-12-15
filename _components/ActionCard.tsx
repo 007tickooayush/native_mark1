@@ -13,7 +13,7 @@ const ActionCard = () => {
             <Text style={[styles.headingText, textColor]}>ActionCard</Text>
             <View style={[styles.elevatedCard, styles.cardImgContainer]}>
                 
-                <TouchableOpacity onPress={() => openwebSite("upi://pay?pa=ayush.tickoo282000@okhdfcbank&pn=AyushTickoo&cu=INR&am=100")}>
+                <TouchableOpacity onPress={() => openwebSite("http://ayush-tickoo.in")}>
                     <Image
                         source={{
                             uri: 'https://picsum.photos/id/16/2500/1667'
@@ -28,6 +28,7 @@ const ActionCard = () => {
                 </View>
                 <View style={styles.cardImgBody}>
                     <Text style={[styles.cardImgBodyText, styles.cardImgText]} numberOfLines={2}>
+                        The image in the card is clickable and will open the link to a portfolio website.
                         This will be the body of the card description text which is not expected to be long but even if it is long then that should not be an issue and should be displaed gracefully with padding and proper text alignment which will only be implemented for the text with in the container of the card that is only enforced on the body of the card.
                         This is the second line of the actionable card.
                         This is the third line of the actionable card.
