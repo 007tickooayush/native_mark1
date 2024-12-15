@@ -1,11 +1,18 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, Linking, StyleSheet } from "react-native";
 
 /**
- * Local constants
+ * ============================== Local constants ==============================
  */
 const cardImgRadius = 24;
 const { width: windowWidth, height: windowHeight } = Dimensions.get('window');
+/**
+ * ============================== Local constants ==============================
+ */
 
+
+/**
+ * ============================== Exported constants ==============================
+ */
 export const colorsList: string[] = [
     'red',
     'blue',
@@ -16,6 +23,17 @@ export const colorsList: string[] = [
     'pink',
     'brown',
 ];
+
+/**
+ * utility function to opne Link
+ * 
+ * example: https://www.google.com
+ * Also Please note that the link should be a starting with a Protocol/Intent handler present like https:// or mailto: or tel: etc.
+ */
+export const openwebSite = async (link: string) => {
+    await Linking.openURL(link)
+        .catch(err => console.error("Couldn't load page >>", err));
+};
 
 type TextColorType = {
     color: string
@@ -46,7 +64,7 @@ export const styles = StyleSheet.create({
     cardImgContainer: {
         flex: 1,
         flexDirection: 'column',
-        justifyContent: 'flex-start',
+        justifyContent: 'space-between',
         flexGrow: 1,
         borderRadius: cardImgRadius,
         margin: 12,
@@ -131,3 +149,6 @@ export const styles = StyleSheet.create({
         color: '#000000',
     },
 });
+/**
+ * ============================== Exported constants ==============================
+ */
