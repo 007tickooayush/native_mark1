@@ -138,14 +138,14 @@ export const styles = StyleSheet.create({
         elevation: 8,
     },
     navbar:{
-        margin: 0,
+        margin: 4,
         paddingTop: 6,
         paddingBottom: 6,
         display: 'flex',
         // flex: 1,
         flexDirection: 'column',
-        alignItems: 'baseline',
-        justifyContent: 'flex-start'
+        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     headingText: {
         fontSize: 24,
