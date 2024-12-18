@@ -1,4 +1,4 @@
-import { Dimensions, Linking, StyleSheet } from "react-native";
+import { Dimensions, Linking, StyleSheet, useColorScheme } from "react-native";
 
 /**
  * ============================== Local constants ==============================
@@ -41,6 +41,14 @@ type TextColorType = {
 
 export const decideTextColor = (isDarkMode: boolean): TextColorType => isDarkMode ? styles.whiteText : styles.darkText;
 
+
+/**
+ * get the color scheme of the device and the text color object for "styles" prop
+ */
+export const getStylesColorTxt = (inverted: boolean = false): TextColorType => {
+    const isDarkMode = useColorScheme() === 'dark';
+    return decideTextColor(!inverted ? isDarkMode : !isDarkMode);
+}
 
 /**
  * Style Structure of the components
@@ -128,6 +136,16 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 4,
         elevation: 8,
+    },
+    navbar:{
+        margin: 0,
+        paddingTop: 6,
+        paddingBottom: 6,
+        display: 'flex',
+        // flex: 1,
+        flexDirection: 'column',
+        alignItems: 'baseline',
+        justifyContent: 'flex-start'
     },
     headingText: {
         fontSize: 24,

@@ -28,15 +28,15 @@ import { decideTextColor, styles } from './_utils/utils';
 import ElevatedCards from './_components/ElevatedCards';
 import FancyCard from './_components/FancyCard';
 import ActionCard from './_components/ActionCard';
+import Navbar from './_components/Navbar';
 
 let length = 100;
 
 const App = (): React.JSX.Element => {
-  const isDarkMode = useColorScheme() === 'dark';
-  const textColor = decideTextColor(isDarkMode);
 
   return (
     <SafeAreaView >
+      <Navbar />
       <ScrollView>
         <FlatCards />
         <ElevatedCards />
